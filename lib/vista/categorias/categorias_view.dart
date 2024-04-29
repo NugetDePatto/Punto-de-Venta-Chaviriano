@@ -10,6 +10,12 @@ class CategoriasView extends StatefulWidget {
 class _CategoriasViewState extends State<CategoriasView> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Column(
+        children: [
+          Text('Hola'),
+        ],
+      ),
+    );
   }
 }

@@ -91,7 +91,7 @@ class _EditarProductosViewState extends State<EditarProductosView> {
                 String mensaje = productosControlador.editarProducto(
                   idController.text,
                   nombreController.text,
-                  double.parse(precioController.text),
+                  precioController.text,
                   categoriaController.text,
                   proveedorController.text,
                 );
@@ -106,7 +106,7 @@ class _EditarProductosViewState extends State<EditarProductosView> {
               },
               child: const Text('Editar'),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 15),
             ElevatedButton(
               onPressed: () {
                 // Aquí se debería guardar el producto

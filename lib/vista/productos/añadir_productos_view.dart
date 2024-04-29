@@ -74,7 +74,7 @@ class _AgregarProductoViewState extends State<AgregarProductoView> {
                   String mensaje = ProductosControlador().agregarProducto(
                     idController.text,
                     nombreController.text,
-                    double.parse(precioController.text),
+                    precioController.text,
                     categoriaController.text,
                     proveedorController.text,
                   );

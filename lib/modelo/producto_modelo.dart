@@ -1,16 +1,10 @@
 import 'package:hive/hive.dart';
 
-@HiveType(typeId: 0)
 class Producto {
-  @HiveField(0)
   String id;
-  @HiveField(1)
   String nombre;
-  @HiveField(2)
   double precio;
-  @HiveField(3)
   String categoria;
-  @HiveField(4)
   String proveedor;
 
   Producto({

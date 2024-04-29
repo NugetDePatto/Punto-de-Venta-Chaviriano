@@ -1,12 +1,8 @@
 import 'package:hive/hive.dart';
 
-@HiveType(typeId: 1)
 class FilaVenta {
-  @HiveField(0)
   String idProducto;
-  @HiveField(1)
   int cantidad;
-  @HiveField(2)
   double subtotal;
 
   FilaVenta({

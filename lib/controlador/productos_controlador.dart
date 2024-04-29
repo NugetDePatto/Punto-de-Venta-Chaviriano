@@ -11,9 +11,9 @@ class ProductosControlador {
       return 'El producto ya existe';
     }
 
-    // if (double.tryParse(precio) == null) {
-    //   return 'El precio debe ser un número';
-    // }
+    if (double.tryParse(precio) == null) {
+      return 'El precio debe ser un número';
+    }
 
     if (id.isEmpty ||
         nombre.isEmpty ||
@@ -28,7 +28,7 @@ class ProductosControlador {
       Producto(
         id: id,
         nombre: nombre,
-        precio: precio,
+        precio: double.parse(precio),
         categoria: categoria,
         proveedor: proveedor,
       ),
@@ -43,9 +43,9 @@ class ProductosControlador {
       return 'El producto no existe';
     }
 
-    // if (double.tryParse(precio) == null) {
-    //   return 'El precio debe ser un número';
-    // }
+    if (double.tryParse(precio) == null) {
+      return 'El precio debe ser un número';
+    }
 
     if (id.isEmpty ||
         nombre.isEmpty ||
