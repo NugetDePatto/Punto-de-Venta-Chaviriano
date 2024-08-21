@@ -6,7 +6,7 @@ import 'package:puntoventa/vista/home_view.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() {
-  initFlutter();
+  iniciandoHive();
 
   runApp(const MyApp());
 }
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-initFlutter() async {
+iniciandoHive() async {
   await Hive.initFlutter();
 
   await Hive.openBox('values');
